@@ -40,8 +40,7 @@ Two reduced collective variables were defined to describe global conformational 
   - End of the linker
 
 
-
-`dihedral-distance-schematic.png`
+![Dihedral–distance schematic](dihedral-distance-schematic.png)
 
 
 
@@ -98,7 +97,7 @@ Both **NMR and X-ray structures** are included in:
 - `apo.txt`
 - `holo.txt`
 
----
+
 
 ## Data Files
 
