@@ -110,11 +110,11 @@ Both **NMR and X-ray structures** are included in:
 
 - **`apo.txt`**  
   Dihedral angle and linker distance values for **experimental apo CaM structures**  
-  (includes both **NMR** and **X-ray** structures)
+  (includes both **apo NMR** structures and **1PRW, 3CLN** )
 
 - **`holo.txt`**  
   Dihedral angle and linker distance values for **experimental holo CaM structures**  
-  (includes both **NMR** and **X-ray** structures)
+  (includes both **holo NMR** structures and **1PRW, 3CLN** )
 
 
 This Supplementary Information provides a reduced-dimensional description of CaM conformational dynamics and enables direct comparison between **MD simulations**, **NMR ensembles**, and **X-ray crystal structures**.
