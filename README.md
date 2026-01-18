@@ -1,4 +1,4 @@
-# Functional Calmodulin States from a Tunable Free-Energy Landscape
+# Functional Calmodulin States are Selected from an Electrostatically Tuned Free Energy Landscape
 
 This repository contains simulation data and analysis workflows used to map the **conformational free-energy landscape of calmodulin (CaM)**.
 
