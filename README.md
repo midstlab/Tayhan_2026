@@ -35,9 +35,6 @@ Each directory contains its own detailed `README.md` describing the analyses and
 
 ### References
 
-[1] Aykut, A. O., Atilgan, A. R., & Atilgan, C.  
-*Designing Molecular Dynamics Simulations to Shift Populations of the Conformational States of Calmodulin.*  
-PLOS Computational Biology **9** (2013).  
-https://doi.org/10.1371/journal.pcbi.1003366
+[1] Aykut, A. O., Atilgan, A. R., & Atilgan, C.*Designing Molecular Dynamics Simulations to Shift Populations of the Conformational States of Calmodulin.*PLOS Computational Biology **9** (2013).https://doi.org/10.1371/journal.pcbi.1003366
 
 
