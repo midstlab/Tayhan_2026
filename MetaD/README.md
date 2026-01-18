@@ -1,4 +1,4 @@
-**Metadynamics (MetaD) Analysis of Calmodulin (CaM)**
+**Well-Tempered Metadynamics (MetaD) Analysis of Calmodulin (CaM)**
 
 This directory contains analysis of **well-tempered metadynamics (MetaD) simulations** of Calmodulin (CaM), focusing on **free-energy landscapes** defined by dihedral angle and linker distance collective variables.
 
