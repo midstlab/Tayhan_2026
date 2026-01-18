@@ -1,11 +1,11 @@
-## System and Simulation Details
+### System and Simulation Details
 
 A **1 μs all-atom molecular dynamics (MD) simulation** of **apo Calmodulin (CaM)** was performed under **low salt** condition.  
 The simulation was used to characterize **large-scale conformational motions** of CaM and to compare **MD-sampled conformations** with **experimentally resolved structures**.
 
 
 
-## RMSD Analysis
+### RMSD Analysis
 
 **Notebook:** `rmsd_plot.ipynb`
 
@@ -19,18 +19,18 @@ This analysis was used to assess **region-specific structural stability and flex
 
 
 
-## Definition of Reduced Collective Variables
+### Definition of Reduced Collective Variables
 
 **Notebook:** `dihedral_distance_calculator.ipynb`
 
 Two reduced collective variables were defined to describe global conformational motions of CaM.
 
-### Linker end-to-end distance (*l*<sub>linker</sub>)
+#### Linker end-to-end distance (*l*<sub>linker</sub>)
 
 - Distance between the **start and end residues of the linker region**
 - Describes **linker bending motion**
 
-### Torsion angle (φ)
+#### Torsion angle (φ)
 
 - Describes **rotational motion between the N- and C-lobes**
 - Defined using the centers of mass of:
@@ -42,7 +42,7 @@ Two reduced collective variables were defined to describe global conformational 
 <img width="4000" height="2250" alt="image" src="https://github.com/user-attachments/assets/2db14ea7-9ddd-43b1-8425-3ab07927b013" />
 
 
-## Raw Collective Variable Data
+#### Calculation of Collective variables
 
 **Notebook:** `dihedral_distance_calculator.ipynb`
 
@@ -56,7 +56,7 @@ This notebook generates the following raw data files from the MD trajectory:
 
 
 
-## Data Processing
+#### Data Processing
 
 **Notebook:** `unify_dihedral_distance_files.ipynb`
 
@@ -69,7 +69,7 @@ This unified file is used for subsequent analysis and visualization.
 
 
 
-## Dihedral–Distance Analysis
+#### Dihedral–Distance Analysis
 
 **Notebook:** `dihedral_distance_code.ipynb`
 
@@ -78,7 +78,7 @@ The reduced collective variables were visualized as **two-dimensional density di
 - **X-axis:** Torsion angle (φ)
 - **Y-axis:** Linker end-to-end distance (*l*<sub>linker</sub>)
 
-### Overlay of Experimental Structures
+#### Overlay of Experimental Structures
 
 Experimental structures were overlaid on the density plots for comparison with MD-sampled conformations:
 
@@ -97,7 +97,7 @@ Both **NMR and X-ray structures** are included in:
 
 
 
-## Data Files
+### Data Files
 
 - **`apo_l_1000_dihedral.dat`**  
   Raw torsion angle values extracted from the MD trajectory
