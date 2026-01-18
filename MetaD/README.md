@@ -1,11 +1,8 @@
-# Supplementary Information  
 **Metadynamics (MetaD) Analysis of Calmodulin (CaM)**
 
 This directory contains analysis of **well-tempered metadynamics (MetaD) simulations** of Calmodulin (CaM), focusing on **free-energy landscapes** defined by dihedral angle and linker distance collective variables.
 
-The results are compared with **experimental NMR and X-ray structures** and with the **1 μs cMD simulations** described in the corresponding README.
-
-
+The results are compared with **experimental NMR and X-ray structures**.
 
 ## MetaD_PMF_Data
 
@@ -21,18 +18,9 @@ The PMF files are used to visualize the energy landscapes of CaM in:
 The PMF data are:
 - **Normalized** by the energy value of **3CLN**, used as the initial structure
 - **Scaled** within the energy range **(−9, 6)**
-
-### Experimental structure overlay
-
 - **Experimental NMR and X-ray structures** (see *1 μs cMD Simulations* README)
 - Overlaid on PMF plots for direct comparison between **MetaD free-energy minima** and experimentally observed conformations
-
-### Three-dimensional PMF landscapes
-
 - Three-dimensional PMF surfaces are also plotted to visualize the **depth of free-energy minima**
-
-### Minimum energy reporting
-
 - In the final block of the notebook, the **minimum free-energy value** corresponding to a given **dihedral angle and linker distance** is reported.
 
 
@@ -51,8 +39,6 @@ This notebook analyzes **`hills.traj` files**, which are another output of MetaD
 ## experimental_structures
 
 This directory contains **experimental structures** used in the study.
-
-### Contents
 - **NMR and X-ray PDB files** of experimental CaM structures used in this work
 
 ### `dihedral_distance_nmr.ipynb`
@@ -76,4 +62,4 @@ These labels are used to:
 
 ---
 
-This directory provides the MetaD-based free-energy perspective of CaM dynamics and enables direct comparison between **MetaD**, **cMD**, and **experimental structures** in the same reduced collective-variable space.
+This directory provides the MetaD-based free-energy perspective of CaM dynamics and enables direct comparison between **MetaD** and **experimental structures** in the same reduced collective-variable space.
