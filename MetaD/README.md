@@ -24,7 +24,6 @@ The PMF data are:
 - In the final block of the notebook, the **minimum free-energy value** corresponding to a given **dihedral angle and linker distance** is reported.
 
 
-
 ### MetaD_Hills_Data
 
 #### `hills_plot.ipynb`
@@ -61,5 +60,15 @@ These labels are used to:
 - Easily control **scatter coloring and grouping** in the plots
 
 
+### example_metad_submission_file
+
+This directory provides **example input files** for well-tempered MetaD simulations.
+
+It includes:
+- Example **ionized PDB and PSF files**
+- **Collective variables (colvars) file**
+- **MetaD configuration (`.conf`) file**
+
+These files serve as a **reference setup** for reproducing or adapting the MetaD simulations used in this study.
 
 This directory provides the MetaD-based free-energy perspective of CaM dynamics and enables direct comparison between **MetaD** and **experimental structures** in the same reduced collective-variable space.
