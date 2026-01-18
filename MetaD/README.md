@@ -55,8 +55,7 @@ This directory contains **experimental structures** used in the study.
 
 These labels are used to:
 - Overlay experimental structures onto **PMF plots**
-- Overlay experimental structures onto **dihedral–distance plots** in the  
-  *1 μs cMD Simulations* directory
+- Overlay experimental structures onto **dihedral–distance plots**
 - Easily control **scatter coloring and grouping** in the plots
 
 
