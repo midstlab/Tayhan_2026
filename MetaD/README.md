@@ -4,9 +4,9 @@ This directory contains analysis of **well-tempered metadynamics (MetaD) simulat
 
 The results are compared with **experimental NMR and X-ray structures**.
 
-## MetaD_PMF_Data
+### MetaD_PMF_Data
 
-### `pmf_plot_script.ipynb`
+#### `pmf_plot_script.ipynb`
 
 This notebook plots **potential mean force (PMF)** landscapes of CaM obtained from **well-tempered metadynamics simulations**.
 
@@ -25,9 +25,9 @@ The PMF data are:
 
 
 
-## MetaD_Hills_Data
+### MetaD_Hills_Data
 
-### `hills_plot.ipynb`
+#### `hills_plot.ipynb`
 
 This notebook analyzes **`hills.traj` files**, which are another output of MetaD simulations.
 
@@ -36,18 +36,18 @@ This notebook analyzes **`hills.traj` files**, which are another output of MetaD
 - **Only a small portion of the `hills.traj` files is uploaded** due to file size limitations
 
 
-## experimental_structures
+### experimental_structures
 
 This directory contains **experimental structures** used in the study.
 - **NMR and X-ray PDB files** of experimental CaM structures used in this work
 
-### `dihedral_distance_nmr.ipynb`
+#### `dihedral_distance_nmr.ipynb`
 
 - Performs the same dihedral angle and linker distance calculations as  
   `dihedral_distance_calculator.ipynb` in the *1 μs cMD Simulations* directory
 - Applied specifically to **experimental structures**
 
-### `unification_nmr_dihedral_distance.ipynb`
+#### `unification_nmr_dihedral_distance.ipynb`
 
 - Unifies dihedral angle and linker distance files for experimental structures
 - Adds:
@@ -60,6 +60,6 @@ These labels are used to:
   *1 μs cMD Simulations* directory
 - Easily control **scatter coloring and grouping** in the plots
 
----
+
 
 This directory provides the MetaD-based free-energy perspective of CaM dynamics and enables direct comparison between **MetaD** and **experimental structures** in the same reduced collective-variable space.
