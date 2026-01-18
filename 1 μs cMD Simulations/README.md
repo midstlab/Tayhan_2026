@@ -38,9 +38,8 @@ Two reduced collective variables were defined to describe global conformational 
   - C-lobe
   - Start of the linker
   - End of the linker
-
-<img width="961" height="346" alt="image" src="https://github.com/user-attachments/assets/3890e1b1-9560-4763-a787-827b63753b72" />
-
+  - 
+<img width="939" height="318" alt="image" src="https://github.com/user-attachments/assets/abe09c4d-4498-4a6f-bfc2-1e1ec40eee12" />
 
 
 #### Calculation of Collective variables
