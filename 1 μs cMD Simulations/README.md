@@ -3,7 +3,7 @@
 A **1 μs all-atom molecular dynamics (MD) simulation** of **apo Calmodulin (CaM)** was performed under **low salt** condition.  
 The simulation was used to characterize **large-scale conformational motions** of CaM and to compare **MD-sampled conformations** with **experimentally resolved structures**.
 
----
+
 
 ## RMSD Analysis
 
@@ -17,7 +17,7 @@ Root-mean-square deviation (**RMSD**) values were calculated throughout the traj
 
 This analysis was used to assess **region-specific structural stability and flexibility** over the course of the simulation.
 
----
+
 
 ## Definition of Reduced Collective Variables
 
@@ -39,11 +39,11 @@ Two reduced collective variables were defined to describe global conformational 
   - Start of the linker
   - End of the linker
 
-A schematic of the collective variable definitions is provided in:
+
 
 `dihedral-distance-schematic.png`
 
----
+
 
 ## Raw Collective Variable Data
 
@@ -57,7 +57,7 @@ This notebook generates the following raw data files from the MD trajectory:
 - **`apo_l_1000_distance.dat`**  
   Linker end-to-end distance values calculated along the trajectory
 
----
+
 
 ## Data Processing
 
@@ -70,7 +70,7 @@ This notebook generates the following raw data files from the MD trajectory:
 
 This unified file is used for subsequent analysis and visualization.
 
----
+
 
 ## Dihedral–Distance Analysis
 
@@ -119,6 +119,5 @@ Both **NMR and X-ray structures** are included in:
   Dihedral angle and linker distance values for **experimental holo CaM structures**  
   (includes both **NMR** and **X-ray** structures)
 
----
 
 This Supplementary Information provides a reduced-dimensional description of CaM conformational dynamics and enables direct comparison between **MD simulations**, **NMR ensembles**, and **X-ray crystal structures**.
