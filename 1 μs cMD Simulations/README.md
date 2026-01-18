@@ -39,9 +39,6 @@ Two reduced collective variables were defined to describe global conformational 
   - Start of the linker
   - End of the linker
 
-
-![Dihedral–distance schematic](dihedral-distance-schematic.png)
-
 <img width="4000" height="2250" alt="image" src="https://github.com/user-attachments/assets/2db14ea7-9ddd-43b1-8425-3ab07927b013" />
 
 
