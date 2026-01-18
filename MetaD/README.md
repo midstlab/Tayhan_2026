@@ -45,7 +45,7 @@ This notebook analyzes **`hills.traj` files**, which are another output of MetaD
 
 - `hills.traj` files record the **evolution of collective variables throughout the simulation**
 - The notebook visualizes how the sampled dihedral angle and linker distance evolve over time
-
+- **Only a small portion of the `hills.traj` files is uploaded** due to file size limitations
 
 
 ## experimental_structures
