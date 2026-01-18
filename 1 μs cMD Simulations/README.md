@@ -15,7 +15,7 @@ Root-mean-square deviation (**RMSD**) values were calculated throughout the traj
 - **C-lobe**
 - **Linker region**
 
-This analysis was used to assess **region-specific structural stability and flexibility** over the course of the simulation.
+This analysis was used to assess **region-specific structural stability and flexibility** throughout the simulation.
 
 
 
