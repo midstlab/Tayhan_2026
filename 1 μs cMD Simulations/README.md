@@ -39,7 +39,8 @@ Two reduced collective variables were defined to describe global conformational 
   - Start of the linker
   - End of the linker
 
-<img width="4000" height="2250" alt="image" src="https://github.com/user-attachments/assets/2db14ea7-9ddd-43b1-8425-3ab07927b013" />
+<img width="961" height="346" alt="image" src="https://github.com/user-attachments/assets/3890e1b1-9560-4763-a787-827b63753b72" />
+
 
 
 #### Calculation of Collective variables
