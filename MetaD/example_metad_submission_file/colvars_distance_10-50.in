@@ -1,0 +1,42 @@
+colvar {
+	name dihedral1
+
+	lowerBoundary -180.0
+	upperBoundary 180.0 	
+	   width  10
+	   dihedral {
+		# COM of N-Domain
+		group1 { atomNumbersRange 1-952 }
+		# CA atom of residue 69
+		group2 { atomnumbers 955 }
+		# CA atom of residue 91
+		group3 { atomnumbers 1323 }
+		# COM of C-Domain 
+		group4 { atomnumbersRange 1337-2184 }									
+  }
+}
+
+colvar {
+  name distance1
+  width 1.5
+  lowerBoundary 10
+  upperBoundary 50
+  distance {
+		# CA atom of residue 69
+		group1 { atomnumbers 955 }
+		# CA atom of residue 91
+		group2 { atomnumbers 1323 }
+  }
+} 
+
+metadynamics {
+   name     meta-dihedral 
+   colvars  dihedral1 distance1
+   hillWeight              0.2
+   newHillFrequency        500  
+   writeFreeEnergyFile 	   on
+   writeHillsTrajectory    on
+   hillwidth               1.0
+   wellTempered            on
+   biasTemperature         1490
+}
