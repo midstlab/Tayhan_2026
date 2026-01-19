@@ -2,13 +2,14 @@
 
 This repository contains simulation data and analysis workflows used to map the **conformational free-energy landscape of calmodulin (CaM)**.
 
-Using **well-tempered metadynamics** and **classical molecular dynamics**, the study identifies distinct CaM conformational states and examines how **electrostatics and calcium binding** regulate their populations and kinetic accessibility.
+Using **well-tempered metadynamics (MetaD)** and **classical molecular dynamics (cMD)**, the study identifies distinct CaM conformational states and examines how **electrostatics and calcium binding** regulate their populations and kinetic accessibility.
+
 
 
 
 ### Repository Structure
 
-#### `1 μs cMD Simulations` (classical MD)
+#### `1 μs cMD Simulations`
 Analysis of **1 μs cMD simulations** of apo CaM under low-salt conditions, including:
 - RMSD analysis
 - Reduced collective variables (dihedral angle and linker distance) [1]
@@ -25,7 +26,7 @@ Analysis of **well-tempered metadynamics simulations** of CaM in holo/apo states
 
 
 #### `cMD_from_MetaD_Conformers`
-Classical MD simulations of **conformers selected from MetaD free-energy minima**, including:
+cMD simulations of **conformers selected from MetaD free-energy minima**, including:
 - Dihedral–distance analysis
 - Salt-bridge analysis
 - Radial distribution function (RDF) analysis
