@@ -1,6 +1,6 @@
 ### System and Simulation Details
 
-A **1 μs all-atom molecular dynamics (MD) simulation** of **apo Calmodulin (CaM)** was performed under **low salt** condition.  
+A **1 μs cMD simulation** of **apo Calmodulin (CaM)** was performed under **low salt** condition.  
 The simulation was used to characterize **large-scale conformational motions** of CaM and to compare **MD-sampled conformations** with **experimentally resolved structures**.
 
 
