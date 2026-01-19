@@ -8,7 +8,8 @@ The results are compared with **experimental NMR and X-ray structures**.
 
 #### `pmf_plot_script.ipynb`
 
-This notebook plots **potential mean force (PMF)** landscapes of CaM obtained from **well-tempered metadynamics simulations**.
+This notebook plots the **potential of mean force (PMF)** of CaM obtained from **well-tempered metadynamics simulations**.
+
 
 The PMF files are used to visualize the energy landscapes of CaM in:
 
