@@ -8,8 +8,8 @@ Using **well-tempered metadynamics** and **classical molecular dynamics**, the s
 
 ### Repository Structure
 
-#### `1 μs cMD Simulations` (classical molecular dynamics)
-Analysis of **1 μs unbiased MD simulations** of apo CaM under low-salt conditions, including:
+#### `1 μs cMD Simulations` (classical MD)
+Analysis of **1 μs cMD simulations** of apo CaM under low-salt conditions, including:
 - RMSD analysis
 - Reduced collective variables (dihedral angle and linker distance) [1]
 - Comparison with experimental structures
