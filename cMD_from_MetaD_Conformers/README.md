@@ -1,5 +1,5 @@
 
-**classical MD (cMD) Simulations of Conformers Selected from MetaD Minima**
+**cMD Simulations of Conformers Selected from MetaD Minima**
 
 This directory contains **cMD simulations** of CaM conformers selected from **free-energy minima identified in MetaD simulations**.  
 The analyses focus on comparing **structural and interaction features** of these conformers across different **functional states** and **salt conditions**.
