@@ -56,6 +56,19 @@ This notebook analyzes **`hills.traj`** files.
 - The notebook visualizes how the sampled **dihedral angle** and **linker distance** evolve over time
 - **Only a small portion of the `hills.traj` files is uploaded** because of file size limitations
 
+In addition, the notebook:
+
+- reads the deposited metadynamics hills from the trajectory files
+- reconstructs the **total bias potential** using all hills deposited up to successive simulation times, such as:
+  - **0–300 ns**
+  - **0–400 ns**
+  - **0–500 ns**
+  - ...
+  - **0–800 ns**
+- converts the reconstructed bias into an **approximate free-energy profile**
+- projects the resulting **2D free-energy surface** into:
+  - **F(φ)** for the dihedral angle
+
 #### `merge_metad_energies_apo_p.ipynb`
 
 This notebook analyzes hills trajectory data from **two replicas** and computes basin-based **probabilities** and **free energies** for the **apo physiological-salt system**.
