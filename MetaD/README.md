@@ -46,7 +46,8 @@ The notebook includes the following features:
 
 ### `MetaD_Hills_Data`
 
-This directory contains notebooks for analyzing **`hills.traj`** files, which are another output of MetaD simulations.
+This directory contains notebooks for analyzing **`hills.traj`** files, which are another output of MetaD simulations.  
+Only files for the ***apo physiological*** system are uploaded due to file size limitations.
 
 #### `hills_plot.ipynb`
 
