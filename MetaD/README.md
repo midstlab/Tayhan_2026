@@ -50,11 +50,11 @@ This directory contains notebooks for analyzing **`hills.traj`** files, which ar
 
 #### `hills_plot.ipynb`
 
-This notebook analyzes **`hills.traj`** files.
+This notebook is located in both **Replica1** and **Replica2** files, and analyzes **`hills.traj`** files.
 
 - `hills.traj` files record the **time evolution of the collective variables** during the simulation
 - The notebook visualizes how the sampled **dihedral angle** and **linker distance** evolve over time
-- **Only a small portion of the `hills.traj` files is uploaded** because of file size limitations
+- Because of file size limitations, the trajectory files are uploaded in parts such as **`*_part1`** and **`*_part2`**
 
 In addition, the notebook:
 
