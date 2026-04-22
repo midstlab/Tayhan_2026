@@ -40,7 +40,7 @@ The notebook includes the following features:
 - **Experimental NMR and X-ray structures** are overlaid for comparison (see the *1 μs cMD Simulations* README)
 - This enables direct comparison between **MetaD free-energy minima** and **experimentally observed conformations**
 - **Three-dimensional PMF surfaces** are also plotted to visualize the **depth of free-energy minima**
-- In the final block of the notebook, the **minimum free-energy value** corresponding to a given **dihedral angle** and **linker distance** is reported
+- In the final block of the notebook, the **minimum free-energy value** corresponding to a given **dihedral angle** and **linker end-to-end distance** is reported
 
 
 
@@ -69,6 +69,7 @@ In addition, the notebook:
 - converts the reconstructed bias into an **approximate free-energy profile**
 - projects the resulting **2D free-energy surface** into:
   - **F(φ)** for the dihedral angle
+  - **F(linker)** for the linker end-to-end distance  
 
 #### `merge_metad_energies_apo_p.ipynb`
 
@@ -81,7 +82,7 @@ It performs the following analyses:
 - Uses the two collective variables:
 
   - **phi** = torsion angle  
-  - **linker** = linker distance
+  - **linker** = linker end-to-end distance 
 
 - Determines whether each sampled point falls inside predefined **rectangular basin regions**
 - Computes **basin probabilities** and **free energies** in separate **time windows**
