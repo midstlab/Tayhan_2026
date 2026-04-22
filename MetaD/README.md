@@ -1,74 +1,153 @@
-**Well-Tempered Metadynamics (MetaD) Analysis of Calmodulin (CaM)**
+# Well-Tempered Metadynamics (MetaD) Analysis of Calmodulin (CaM)
 
-This directory contains analysis of **well-tempered metadynamics (MetaD) simulations** of Calmodulin (CaM), focusing on **free-energy landscapes** defined by dihedral angle and linker distance collective variables.
+This directory contains analyses of **well-tempered metadynamics (MetaD) simulations** of **Calmodulin (CaM)**, focusing on **free-energy landscapes** defined by two collective variables: **dihedral angle** and **linker distance**.
 
-The results are compared with **experimental NMR and X-ray structures**.
+The results are compared directly with **experimental NMR and X-ray structures**.
 
-### MetaD_PMF_Data
+---
+
+## Directory Overview
+
+### `MetaD_PMF_Data`
+
+This directory contains notebooks for analyzing and visualizing **potential of mean force (PMF)** data obtained from MetaD simulations.
+
+#### `merge_metad_replicas.ipynb`
+
+This notebook merges PMF data from **two or more MetaD replicas**.
+
+It performs the following steps:
+
+- Reads **2 or more replica PMF files**
+- Checks that all PMFs share the same **2D collective-variable grid**
+- Merges the PMFs using **Boltzmann/probability averaging**
+- Writes the resulting **merged PMF**
+  
 
 #### `pmf_plot_script.ipynb`
 
-This notebook plots the **potential of mean force (PMF)** of CaM obtained from **well-tempered metadynamics simulations**.
+This notebook plots the **PMF landscapes** of CaM from well-tempered metadynamics simulations.
 
+The PMF data are used to visualize CaM conformational landscapes in:
 
-The PMF files are used to visualize the energy landscapes of CaM in:
+- **Ca²⁺-bound (holo)** and **Ca²⁺-free (apo)** states
+- **Low-salt (l)** and **physiological (p)** ionic strength conditions
 
-- **Ca²⁺-bound (holo)** and **Ca²⁺-free (apo)** states  
-- **Low-salt (l)** and **physiological (p)** ionic strength conditions  
+The notebook includes the following features:
 
-The PMF data are:
-- **Normalized** by the energy value of **3CLN**, used as the initial structure
-- **Scaled** within the energy range **(−9, 6)**
-- **Experimental NMR and X-ray structures** (see *1 μs cMD Simulations* README)
-- Overlaid on PMF plots for direct comparison between **MetaD free-energy minima** and experimentally observed conformations
-- Three-dimensional PMF surfaces are also plotted to visualize the **depth of free-energy minima**
-- In the final block of the notebook, the **minimum free-energy value** corresponding to a given **dihedral angle and linker distance** is reported.
+- PMF values are **normalized** using the energy value of **3CLN**, which is the initial structure
+- PMFs are **scaled** within the energy range **(-9, 6)**
+- **Experimental NMR and X-ray structures** are overlaid for comparison (see the *1 μs cMD Simulations* README)
+- This enables direct comparison between **MetaD free-energy minima** and **experimentally observed conformations**
+- **Three-dimensional PMF surfaces** are also plotted to visualize the **depth of free-energy minima**
+- In the final block of the notebook, the **minimum free-energy value** corresponding to a given **dihedral angle** and **linker distance** is reported
 
+---
 
-### MetaD_Hills_Data
+### `MetaD_Hills_Data`
+
+This directory contains notebooks for analyzing **`hills.traj`** files, which are another output of MetaD simulations.
 
 #### `hills_plot.ipynb`
 
-This notebook analyzes **`hills.traj` files**, which are another output of MetaD simulations.
+This notebook analyzes **`hills.traj`** files.
 
-- `hills.traj` files record the **evolution of collective variables throughout the simulation**
-- The notebook visualizes how the sampled dihedral angle and linker distance evolve over time
-- **Only a small portion of the `hills.traj` files is uploaded** due to file size limitations
+- `hills.traj` files record the **time evolution of the collective variables** during the simulation
+- The notebook visualizes how the sampled **dihedral angle** and **linker distance** evolve over time
+- **Only a small portion of the `hills.traj` files is uploaded** because of file size limitations
 
+#### `merge_metad_energies_apo_p.ipynb`
 
-### experimental_structures
+This notebook analyzes hills trajectory data from **two replicas** and computes basin-based **probabilities** and **free energies** for the **apo physiological-salt system**.
 
-This directory contains **experimental structures** used in the study.
+It performs the following analyses:
+
+- Reads all **hills trajectory files** from **two replicas**
+- Classifies each sampled point into predefined **structural basins**
+- Uses the two collective variables:
+
+  - **phi** = torsion angle  
+  - **linker** = linker distance
+
+- Determines whether each sampled point falls inside predefined **rectangular basin regions**
+- Computes **basin probabilities** and **free energies** in separate **time windows**
+
+The trajectory is divided into three windows:
+
+- **200-400 ns**
+- **400-600 ns**
+- **600-800 ns**
+
+Within each time window, the notebook:
+
+- Counts how many sampled points fall into each basin
+- Converts the counts into **probabilities**
+- Computes basin **free energies** using:
+
+\[
+F = -k_B T \ln(p)
+\]
+
+A **pseudocount** is used so that zero counts do not cause numerical problems.
+
+Depending on the system and comparison, the notebook also computes quantities such as:
+
+- **deltaP**
+- **deltaF = F2 - F1**
+
+In addition, it generates:
+
+- **summary tables**
+- **sanity-check plots**
+- final summaries reporting **mean**, **standard deviation (SD)**, and **standard error of the mean (SEM)**
+
+---
+
+### `experimental_structures`
+
+This directory contains the **experimental structures** used in this study.
+
+It includes:
+
 - **NMR and X-ray PDB files** of experimental CaM structures used in this work
 
 #### `dihedral_distance_nmr.ipynb`
 
-- Performs the same dihedral angle and linker distance calculations as  
-  `dihedral_distance_calculator.ipynb` in the *1 μs cMD Simulations* directory
-- Applied specifically to **experimental structures**
+This notebook performs the same **dihedral angle** and **linker distance** calculations as `dihedral_distance_calculator.ipynb` in the *1 μs cMD Simulations* directory.
+
+It is applied specifically to **experimental structures**.
 
 #### `unification_nmr_dihedral_distance.ipynb`
 
-- Unifies dihedral angle and linker distance files for experimental structures
-- Adds:
-  - An **energy column**
-  - A **numerical label** (e.g. 6.0, 8.0 )
+This notebook unifies the dihedral angle and linker distance files generated for the experimental structures.
+
+It adds:
+
+- an **energy column**
+- a **numerical label** (for example, **6.0** or **8.0**)
 
 These labels are used to:
-- Overlay experimental structures onto **PMF plots**
-- Overlay experimental structures onto **dihedral–distance plots**
-- Easily control **scatter coloring and grouping** in the plots
 
+- overlay experimental structures onto **PMF plots**
+- overlay experimental structures onto **dihedral-distance plots**
+- control **scatter coloring and grouping** more easily in the plots
 
-### example_metad_submission_file
+---
 
-This directory provides **example input files** for well-tempered MetaD simulations.
+### `example_metad_submission_file`
+
+This directory provides example input files for **well-tempered MetaD simulations**.
 
 It includes:
-- Example **ionized PDB and PSF files**
-- **Collective variables (colvars) file**
-- **MetaD configuration (`.conf`) file**
 
-These files serve as a **reference setup** for reproducing or adapting the MetaD simulations used in this study.
+- example **ionized PDB and PSF files**
+- a **collective variables (colvars) file**
+- a **MetaD configuration (`.conf`) file**
 
-This directory provides the MetaD-based free-energy perspective of CaM dynamics and enables direct comparison between **MetaD** and **experimental structures** in the same reduced collective-variable space.
+These files serve as a reference setup for reproducing or adapting the MetaD simulations used in this study.
+
+---
+
+## Summary
+
+This directory provides a **MetaD-based free-energy perspective** on CaM dynamics and enables direct comparison between **MetaD results** and **experimental structures** within the same reduced collective-variable space.
