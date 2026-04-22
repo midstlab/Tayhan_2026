@@ -84,7 +84,9 @@ Within each time window, the notebook:
 - Converts the counts into **probabilities**
 - Computes basin **free energies** using:
 
-$F = -k_B T \ln(p)$
+$$
+F = -k_B T \ln(p)
+$$
 
 A **pseudocount** is used so that zero counts do not cause numerical problems.
 
