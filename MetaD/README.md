@@ -4,7 +4,7 @@ This directory contains analyses of **well-tempered metadynamics (MetaD) simulat
 
 The results are compared directly with **experimental NMR and X-ray structures**.
 
----
+
 
 ## Directory Overview
 
@@ -42,7 +42,7 @@ The notebook includes the following features:
 - **Three-dimensional PMF surfaces** are also plotted to visualize the **depth of free-energy minima**
 - In the final block of the notebook, the **minimum free-energy value** corresponding to a given **dihedral angle** and **linker distance** is reported
 
----
+
 
 ### `MetaD_Hills_Data`
 
@@ -84,9 +84,7 @@ Within each time window, the notebook:
 - Converts the counts into **probabilities**
 - Computes basin **free energies** using:
 
-\[
-F = -k_B T \ln(p)
-\]
+F = -k_BT ln(p)
 
 A **pseudocount** is used so that zero counts do not cause numerical problems.
 
@@ -101,7 +99,7 @@ In addition, it generates:
 - **sanity-check plots**
 - final summaries reporting **mean**, **standard deviation (SD)**, and **standard error of the mean (SEM)**
 
----
+
 
 ### `experimental_structures`
 
@@ -132,7 +130,7 @@ These labels are used to:
 - overlay experimental structures onto **dihedral-distance plots**
 - control **scatter coloring and grouping** more easily in the plots
 
----
+
 
 ### `example_metad_submission_file`
 
@@ -146,7 +144,7 @@ It includes:
 
 These files serve as a reference setup for reproducing or adapting the MetaD simulations used in this study.
 
----
+
 
 ## Summary
 
