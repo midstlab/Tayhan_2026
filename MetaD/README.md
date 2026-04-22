@@ -86,8 +86,6 @@ Within each time window, the notebook:
 
 $F = -k_B T \ln(p)$
 
-A **pseudocount** is used so that zero counts do not cause numerical problems.
-
 Depending on the system and comparison, the notebook also computes quantities such as:
 
 - **deltaP**
